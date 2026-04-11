@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Tochukwu Odey | Doctoral Student, Engineering Education</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Gamification HUD -->
+    <div id="player-hud" class="player-hud">
+        <div class="hud-info">
+            <span class="hud-level" id="player-level">Lvl 1: Freshman</span>
+            <span class="hud-xp"><span id="player-xp-text">0</span> / <span id="player-xp-max">100</span> XP</span>
+        </div>
+        <div class="xp-bar-container">
+            <div class="xp-bar-fill" id="xp-bar"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+    
+    <!-- Modal Dialog -->
+    <div id="research-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-title" style="color: var(--clr-primary); margin-bottom: 10px;">Title</h3>
+            <p id="modal-desc" class="text-muted">Description</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">NTO</a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="egs6055.html">Teaching Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <h1 class="hero-title">Nicholas Tochukwu Odey</h1>
+                    <h2 class="hero-subtitle">Doctoral Student, Engineering Education | Florida International University</h2>
+                    <p class="hero-tagline">"Learning is an act of becoming."</p>
+                    <a href="#about" class="btn btn-xp-trigger">About Me</a>
+                    <a href="egs6055.html" class="btn btn-outline btn-xp-trigger" style="margin-left: 10px;">Teaching Portfolio</a>
+                    <a href="assets/docs/cv.pdf" id="cv-vault-btn" class="btn btn-outline locked-vault" style="margin-left: 10px;" target="_blank"><i class="fas fa-lock" id="cv-lock-icon" style="margin-right: 5px;"></i> CV Locked</a>
+                </div>
+                <div class="hero-image-container reveal" style="transition-delay: 0.2s;">
+                    <img src="assets/images/profile.jpg" alt="Nicholas Tochukwu Odey Profile" class="hero-image cv-interaction" onerror="this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section section-alt">
+        <div class="container text-center">
+            <h2 class="section-title reveal">About Me</h2>
+            <div style="display: flex; justify-content: center;">
+                <p class="about-text reveal text-muted" style="transition-delay: 0.2s;">
+                    I am a doctoral student in Engineering Education at FIU, working under Dr. David Delaine in the iCBL Lab. My dissertation centers on the FORGE Reciprocal Partnership model, which applies Fetterman's Empowerment Evaluation to community-academic partnerships as developmental contexts for engineering professional formation. I have a background in electronics, embedded systems, and IoT development, and have been tutoring since 2016. I organized a Secondary School Girls Robotics Summer Camp that became a formative experience shaping my equity-centered teaching philosophy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="section">
+        <div class="container text-center">
+            <h2 class="section-title reveal">Research Interests</h2>
+            <div class="tags-container reveal" style="transition-delay: 0.2s;">
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Engineering Education" data-definition="The study of how engineering is taught, learned, and practiced, aiming to improve pedagogical methods and curriculum design in STEM.">Engineering Education</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Community-Academic Partnerships" data-definition="Reciprocal relationships between academic institutions and local communities focused on co-creating knowledge and addressing community needs.">Community-Academic Partnerships</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Empowerment Evaluation" data-definition="An evaluation approach designed to help communities monitor and evaluate their own performance, fostering self-determination.">Empowerment Evaluation</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Service-Learning" data-definition="An educational approach that combines learning objectives with community service to provide a pragmatic, progressive learning experience.">Service-Learning</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Engineering Identity" data-definition="How students and professionals see themselves and are seen by others as 'engineers', which is crucial for retention and equity in the field.">Engineering Identity</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Qualitative Research Methods" data-definition="Research methods reliant on non-numerical data like text and interviews, emphasizing lived experiences and meaning-making.">Qualitative Research Methods</span>
+                <span class="tag tag-interactive btn-xp-trigger" data-title="Equity in STEM" data-definition="Actively identifying and dismantling systemic barriers to ensure fair access and participation in science, technology, engineering, and math for all individuals.">Equity in STEM</span>
+            </div>
+            <p class="text-muted" style="margin-top: 1.5rem; font-size: 0.9rem;">Click any topic to learn more.</p>
+        </div>
+    </section>
+
+    <!-- Current Projects -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Current Projects</h2>
+            </div>
+            <div class="cards-grid">
+                <!-- Project 1 -->
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-body">
+                        <h3 class="card-title">FORGE Dissertation</h3>
+                        <p class="text-muted">Developing a reciprocal partnership model using Empowerment Evaluation as a framework for engineering professional formation.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="card reveal" style="transition-delay: 0.4s;">
+                    <div class="card-body">
+                        <h3 class="card-title">NSF CAREER Project</h3>
+                        <p class="text-muted">Collaborative qualitative coding research examining Assumptions of Service-Learning, Approaches, Positionality, and Critical Reflexivity across faculty interviews.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Logic Sandbox -->
+    <section id="fun-lab" class="section">
+        <div class="container text-center">
+            <h2 class="section-title reveal">Digital Logic Sandbox</h2>
+            <p class="reveal text-muted" style="margin-bottom: 2rem;">Build your own circuit. Select the gates and toggle the inputs to configure a circuit that turns on the light to unlock your reward.</p>
+            
+            <div class="lab-container sandbox-container reveal">
+                <div class="circuit-board-sandbox">
+                    <!-- Layer 1 -->
+                    <div class="sandbox-layer">
+                        <div class="sandbox-group">
+                            <div class="sandbox-inputs">
+                                <label class="switch"><input type="checkbox" class="sb-input" id="sb-in1"><span class="slider round"></span></label>
+                                <label class="switch"><input type="checkbox" class="sb-input" id="sb-in2" checked><span class="slider round"></span></label>
+                            </div>
+                            <div class="sandbox-gate">
+                                <select id="sb-gateA" class="gate-selector">
+                                    <option value="AND">AND</option>
+                                    <option value="OR" selected>OR</option>
+                                    <option value="XOR">XOR</option>
+                                    <option value="NAND">NAND</option>
+                                    <option value="NOR">NOR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sandbox-group">
+                            <div class="sandbox-inputs">
+                                <label class="switch"><input type="checkbox" class="sb-input" id="sb-in3"><span class="slider round"></span></label>
+                                <label class="switch"><input type="checkbox" class="sb-input" id="sb-in4"><span class="slider round"></span></label>
+                            </div>
+                            <div class="sandbox-gate">
+                                <select id="sb-gateB" class="gate-selector">
+                                    <option value="AND" selected>AND</option>
+                                    <option value="OR">OR</option>
+                                    <option value="XOR">XOR</option>
+                                    <option value="NAND">NAND</option>
+                                    <option value="NOR">NOR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layer 2 -->
+                    <div class="sandbox-layer final-layer">
+                        <div class="sandbox-group final-group">
+                            <div class="sandbox-gate final-gate-container">
+                                <select id="sb-gateC" class="gate-selector final-gate">
+                                    <option value="AND" selected>AND</option>
+                                    <option value="OR">OR</option>
+                                    <option value="XOR">XOR</option>
+                                    <option value="NAND">NAND</option>
+                                    <option value="NOR">NOR</option>
+                                </select>
+                            </div>
+                            <div class="sandbox-output">
+                                <div class="lightbulb" id="sandbox-lightbulb"><i class="fas fa-lightbulb"></i></div>
+                                <span class="state-label" id="sb-stateOut">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="sb-success" class="text-muted" style="margin-top: 1rem; opacity: 0; transition: opacity 0.3s; color: var(--clr-accent); font-weight: bold;">Circuit active! Vault unlocked.</p>
+        </div>
+    </section>
+
+    <!-- Contact / Suggestion Form -->
+    <section id="contact-form" class="section section-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title reveal">Leave a Suggestion or Contact Me</h2>
+            </div>
+            
+            <div class="form-container reveal" style="max-width: 600px; margin: 0 auto; margin-top: 2rem;">
+                <!-- Replace the action URL with your actual Formspree endpoint -->
+                <form action="https://formspree.io/f/your_formspree_id_here" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="General Contact">General Contact</option>
+                            <option value="Research Collaboration">Research Collaboration</option>
+                            <option value="Suggestion">Website Suggestion / Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Hello Nicholas, I really enjoyed your interactive portfolio!"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Send Message <i class="fas fa-paper-plane" style="margin-left: 5px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials / Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title reveal" style="color: var(--clr-light); margin-bottom: 2rem;">Get In Touch</h2>
+            <div class="social-links reveal" style="transition-delay: 0.2s;">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copy reveal" style="transition-delay: 0.4s;">
+                <p>&copy; 2026 Nicholas Tochukwu Odey. All rights reserved. | Florida International University</p>
+                <p style="margin-top: 10px; font-style: italic; color: var(--clr-accent);">Learning is an act of becoming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gamification Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/main.js?v=3"></script>
+    <script src="assets/js/game.js?v=3"></script>
+</body>
+</html>

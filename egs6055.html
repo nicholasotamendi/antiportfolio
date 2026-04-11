@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGS 6055 Teaching Portfolio | Nicholas Tochukwu Odey</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Gamification HUD -->
+    <div id="player-hud" class="player-hud">
+        <div class="hud-info">
+            <span class="hud-level" id="player-level">Lvl 1: Freshman</span>
+            <span class="hud-xp"><span id="player-xp-text">0</span> / <span id="player-xp-max">100</span> XP</span>
+        </div>
+        <div class="xp-bar-container">
+            <div class="xp-bar-fill" id="xp-bar"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">NTO</a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="egs6055.html" class="active">Teaching Portfolio</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="reveal">EGS 6055: Foundations of Engineering and Computing Teaching and Learning</h1>
+            <p class="text-muted reveal"
+                style="color: rgba(255,255,255,0.8); margin-top: 10px; font-size: 1.1rem; transition-delay: 0.1s;">
+                Spring 2025 | Instructor: Dr. Héctor E. Rodríguez-Simmonds</p>
+            <p class="framing-statement reveal" style="transition-delay: 0.2s;">
+                "This portfolio documents my growth as an educator over the semester — from my first theories of
+                learning to a full teaching demonstration grounded in backward design and pedagogical content
+                knowledge."
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1: My Theory of Learning -->
+        <section id="theory-of-learning" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">1. My Theory of Learning</h2>
+                <div class="theory-section reveal" style="transition-delay: 0.2s;">
+                    <p class="theory-text">
+                        "My personal theory of learning is that learning is fundamentally an act of becoming. It is the
+                        process by which a person comes to see themselves as a legitimate participant in a community of
+                        practice. You learn by becoming someone who can contribute to the work of that community,
+                        someone who can communicate in its language, and who acts according to its norms. This means
+                        that learning is simultaneously cognitive, social, and identity-forming. You cannot separate
+                        what I learn from how I learned it, who I learned it with, and whether I believe I belong in
+                        that space where the learning is happening."
+                    </p>
+                    <a href="/assets/docs/theory_of_learning.pdf" class="btn" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download Full Document (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: My Teaching Philosophy -->
+        <section id="teaching-philosophy" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">2. My Teaching Philosophy</h2>
+                <div class="theory-section reveal" style="transition-delay: 0.2s;">
+                    <p class="theory-text">
+                        "The values I carry into every classroom are a belief that every learner belongs in the room. I
+                        show learners they belong and position myself as a facilitator of their learning. I scaffold
+                        creative exploration and help students reach their zone of proximal development. My teaching is
+                        grounded in Sfard's participation metaphor, Vygotsky's ZPD, Lave and Wenger's situated learning,
+                        and Brookfield's critical reflection."
+                    </p>
+                    <a href="/assets/docs/teaching_philosophy.pdf" class="btn" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download Philosophy (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Response Papers -->
+        <section id="response-papers" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">3. Response Papers</h2>
+                <div class="cards-grid">
+
+                    <div class="card reveal" style="transition-delay: 0.2s;">
+                        <div class="card-body">
+                            <h3 class="card-title">Response Paper 1</h3>
+                            <h4 style="color: var(--clr-primary); font-size: 1.1rem; margin-bottom: 1rem;">"When The
+                                Individual Isn't Enough: Learning as Social Participation"</h4>
+                            <p class="text-muted">A critique of acquisition-dominated frameworks in learning theory,
+                                arguing for Sfard's participation metaphor through the lens of my Girls Robotics Summer
+                                Camp experience.</p>
+                        </div>
+                        <a href="/assets/docs/response_paper_1.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-download"></i> Download</a>
+                    </div>
+
+                    <div class="card reveal" style="transition-delay: 0.4s;">
+                        <div class="card-body">
+                            <h3 class="card-title">Response Paper 2</h3>
+                            <h4 style="color: var(--clr-primary); font-size: 1.1rem; margin-bottom: 1rem;">"Who Belongs
+                                in Engineering Education"</h4>
+                            <p class="text-muted">An argument that the structures defining engineering education are
+                                ideological designs, not neutral frameworks, using Secules et al. (2018)<sup>1</sup> and
+                                Brookfield's concept of hegemony.</p>
+                        </div>
+                        <a href="/assets/docs/response_paper_2.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-download"></i> Download</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Situational Factors & Learning Goals -->
+        <section id="situational-factors" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">4. Situational Factors &amp; Learning Goals</h2>
+                <div class="reveal"
+                    style="background-color: var(--clr-white); padding: 3rem; border-radius: var(--border-radius); box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition-delay: 0.2s;">
+                    <p class="about-text" style="margin-bottom: 2rem;">
+                        "A structured analysis of the teaching/learning context for my Week 3 Digital Logic Gates
+                        lesson, including course context, learner characteristics, physical environment, and
+                        six-category learning goals spanning foundational knowledge, application, integration, human
+                        dimensions, caring, and learning how to learn."
+                    </p>
+                    <a href="/assets/docs/situational_factors.pdf" class="btn" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download Analysis</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Lesson Plan -->
+        <section id="lesson-plan" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">5. Lesson Plan</h2>
+                <div class="reveal"
+                    style="background-color: var(--clr-light); padding: 3rem; border-radius: var(--border-radius); border-left: 5px solid var(--clr-primary); transition-delay: 0.2s;">
+                    <p class="about-text" style="margin-bottom: 2rem;">
+                        "A full lesson plan for Week 3 of a Digital Logic Gates course, grounded in backward design
+                        (Wiggins & McTighe, 1998)<sup>2</sup>. The lesson uses a 4-phase structure: Belonging Opener,
+                        Discover & Document, Design Challenge, and Reflect & Share. Theoretical grounding: Sfard
+                        (1998)<sup>3</sup>, Vygotsky/Bruner (1997)<sup>4</sup>, Smith et al. (2005)<sup>5</sup>."
+                    </p>
+                    <a href="/assets/docs/lesson_plan.pdf" class="btn" target="_blank" rel="noopener noreferrer"><i
+                            class="fas fa-file-pdf"></i> Download Lesson Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Teaching Demonstration Slides -->
+        <section id="teaching-demo" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">6. Teaching Demonstration Slides</h2>
+
+                <p class="about-text reveal" style="font-style: italic; margin-bottom: 2rem; transition-delay: 0.2s;">
+                    "9-slide deck covering teaching philosophy, backward design rationale, PCK learner profiles, 4-phase
+                    lesson flow, gate content, design challenge, assessment, and closing."
+                </p>
+
+                <div class="slides-grid reveal" style="transition-delay: 0.3s;">
+                    <!-- Placeholder Thumbnails -->
+                    <div class="slide-thumbnail">Slide 1</div>
+                    <div class="slide-thumbnail">Slide 2</div>
+                    <div class="slide-thumbnail">Slide 3</div>
+                    <div class="slide-thumbnail">Slide 4</div>
+                    <div class="slide-thumbnail">Slide 5</div>
+                    <div class="slide-thumbnail">Slide 6</div>
+                    <div class="slide-thumbnail">Slide 7</div>
+                    <div class="slide-thumbnail">Slide 8</div>
+                    <div class="slide-thumbnail">Slide 9</div>
+                </div>
+
+                <div class="reveal" style="margin-top: 2rem; transition-delay: 0.4s;">
+                    <a href="/assets/docs/teaching_demo_slides.pdf" class="btn" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-file-powerpoint"></i> Download Full Deck</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Student Handouts -->
+        <section id="student-handouts" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title reveal">7. Student Handouts</h2>
+                <div class="cards-grid">
+
+                    <div class="card reveal" style="transition-delay: 0.2s;">
+                        <div class="card-body">
+                            <h3 class="card-title">Pre-Class Reading</h3>
+                            <p class="text-muted">Binary numbers, Boolean concepts, ICs, truth table reading,
+                                self-check.</p>
+                        </div>
+                        <a href="/assets/docs/pre_class_reading.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-download"></i> Download</a>
+                    </div>
+
+                    <div class="card reveal" style="transition-delay: 0.4s;">
+                        <div class="card-body">
+                            <h3 class="card-title">Exit Reflection</h3>
+                            <p class="text-muted">Ratings + written explanation hybrid covering all five learning goals
+                                plus an identity moment prompt.</p>
+                        </div>
+                        <a href="/assets/docs/exit_reflection.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-download"></i> Download</a>
+                    </div>
+
+                    <div class="card reveal" style="transition-delay: 0.6s;">
+                        <div class="card-body">
+                            <h3 class="card-title">Combined Handout</h3>
+                            <p class="text-muted">The earlier full in-class reference sheet covering fundamental
+                                concepts and applications.</p>
+                        </div>
+                        <a href="/assets/docs/combined_handout.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-download"></i> Download</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Personal Reflection -->
+        <section id="personal-reflection" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">8. Personal Reflection</h2>
+                <div class="reflection-box reveal" style="transition-delay: 0.2s;">
+                    <p class="reflection-text">
+                        "This course changed the way I think about teaching. I came in believing that a well-prepared
+                        lesson was the core of good teaching. I leave understanding that belonging comes before content
+                        — and that the first thing any learner needs from me is not a lesson plan, it is a sign that
+                        they are welcome in the room."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- References Optional Footer addition specific to the scholarly citations -->
+    <div class="container" style="padding-bottom: 2rem;">
+        <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin-bottom: 1rem;">
+        <p class="text-muted" style="font-size: 0.85rem;">
+            <em>References noted in text correlate to standard engineering education scholarly literature.</em>
+        </p>
+    </div>
+
+    <!-- Socials / Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title reveal" style="color: var(--clr-light); margin-bottom: 2rem;">Get In Touch</h2>
+            <div class="social-links reveal" style="transition-delay: 0.2s;">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copy reveal" style="transition-delay: 0.4s;">
+                <p>&copy; 2026 Nicholas Tochukwu Odey. All rights reserved. | Florida International University</p>
+                <p style="margin-top: 10px; font-style: italic; color: var(--clr-accent);">Learning is an act of
+                    becoming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS and Gamification Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
