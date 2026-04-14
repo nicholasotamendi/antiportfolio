@@ -1,6 +1,6 @@
 # Academic Portfolio - Nicholas Tochukwu Odey
 
-A clean, modern, and professional academic portfolio website built for Nicholas Tochukwu Odey, a doctoral candidate in Engineering Education at Florida International University. This site serves both as a professional homepage and a customized course portfolio for EGS 6055.
+Academic website for Nicholas Tochukwu Odey, a doctoral student in Engineering Education at Florida International University. This site serves both as a professional homepage and a customized course portfolio for my class.
 
 ## Technology Stack
 
