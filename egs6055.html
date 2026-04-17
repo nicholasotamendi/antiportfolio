@@ -187,20 +187,58 @@
                     lesson flow, gate content, design challenge, assessment, and closing."
                 </p>
 
-                <div class="slides-grid reveal" style="transition-delay: 0.3s;">
-                    <!-- Placeholder Thumbnails -->
-                    <div class="slide-thumbnail">Slide 1</div>
-                    <div class="slide-thumbnail">Slide 2</div>
-                    <div class="slide-thumbnail">Slide 3</div>
-                    <div class="slide-thumbnail">Slide 4</div>
-                    <div class="slide-thumbnail">Slide 5</div>
-                    <div class="slide-thumbnail">Slide 6</div>
-                    <div class="slide-thumbnail">Slide 7</div>
-                    <div class="slide-thumbnail">Slide 8</div>
-                    <div class="slide-thumbnail">Slide 9</div>
+                <div class="carousel-container reveal" style="transition-delay: 0.3s;">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide current-slide">
+                                <div class="slide-thumbnail">Slide 1</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 2</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 3</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 4</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 5</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 6</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 7</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 8</div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="slide-thumbnail">Slide 9</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-button carousel-button--left is-hidden" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button carousel-button--right" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator current-indicator" aria-label="Slide 1"></button>
+                        <button class="carousel-indicator" aria-label="Slide 2"></button>
+                        <button class="carousel-indicator" aria-label="Slide 3"></button>
+                        <button class="carousel-indicator" aria-label="Slide 4"></button>
+                        <button class="carousel-indicator" aria-label="Slide 5"></button>
+                        <button class="carousel-indicator" aria-label="Slide 6"></button>
+                        <button class="carousel-indicator" aria-label="Slide 7"></button>
+                        <button class="carousel-indicator" aria-label="Slide 8"></button>
+                        <button class="carousel-indicator" aria-label="Slide 9"></button>
+                    </div>
                 </div>
 
-                <div class="reveal" style="margin-top: 2rem; transition-delay: 0.4s;">
+                <div class="reveal" style="text-align: center; margin-top: 2rem; transition-delay: 0.4s;">
                     <a href="/assets/docs/teaching_demo_slides.pdf" class="btn" target="_blank"
                         rel="noopener noreferrer"><i class="fas fa-file-powerpoint"></i> Download Full Deck</a>
                 </div>
@@ -251,13 +289,15 @@
         <section id="personal-reflection" class="section">
             <div class="container">
                 <h2 class="section-title reveal">8. Personal Reflection</h2>
-                <div class="reflection-box reveal" style="transition-delay: 0.2s;">
-                    <p class="reflection-text">
+                <div class="theory-section reveal" style="transition-delay: 0.2s;">
+                    <p class="theory-text">
                         "This course changed the way I think about teaching. I came in believing that a well-prepared
                         lesson was the core of good teaching. I leave understanding that belonging comes before content
-                        — and that the first thing any learner needs from me is not a lesson plan, it is a sign that
+                        - and that the first thing any learner needs from me is not a lesson plan, it is a sign that
                         they are welcome in the room."
                     </p>
+                    <a href="/assets/docs/personal_reflection.pdf" class="btn" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download Reflection (PDF)</a>
                 </div>
             </div>
         </section>
@@ -277,14 +317,17 @@
         <div class="container">
             <h2 class="section-title reveal" style="color: var(--clr-light); margin-bottom: 2rem;">Get In Touch</h2>
             <div class="social-links reveal" style="transition-delay: 0.2s;">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nicholas-tochukwu-odey?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://scholar.google.com/citations?user=7wbqkl0AAAAJ&hl=en" aria-label="Google Scholar"><i
+                        class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.researchgate.net/profile/Nicholas-Odey?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHJvZmlsZSJ9fQ"
+                    aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="https://github.com/nicholasotamendi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:nodey001@fiu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="footer-copy reveal" style="transition-delay: 0.4s;">
-                <p>&copy; 2026 Nicholas Tochukwu Odey. All rights reserved. | Florida International University</p>
+                <p>&copy; 2026 Nicholas Tochukwu Odey. All rights reserved.</p>
                 <p style="margin-top: 10px; font-style: italic; color: var(--clr-accent);">Learning is an act of
                     becoming.</p>
             </div>
