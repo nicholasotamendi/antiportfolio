@@ -18,6 +18,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -275,6 +278,11 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required
                             placeholder="Hello Nicholas, I really enjoyed your interactive portfolio!"></textarea>
+                    </div>
+
+                    <!-- Google reCAPTCHA widget -->
+                    <div class="form-group" style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                        <div class="g-recaptcha" data-sitekey="6LcNJ70sAAAAADNMRHsi7vOaAFJPKs4nOB2d9Kfl"></div>
                     </div>
 
                     <button type="submit" class="btn" style="width: 100%;">Send Message <i class="fas fa-paper-plane"

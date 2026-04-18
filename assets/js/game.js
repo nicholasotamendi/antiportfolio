@@ -153,7 +153,9 @@ window.gameEngine = {
             btn.classList.remove('locked-vault');
             btn.classList.add('unlocked-vault');
             btn.innerHTML = `<i class="fas fa-file-download" style="margin-right: 5px;"></i> Download CV`;
-            btn.href = "assets/docs/cv.pdf"; // Re-enable real download
+            if (btn.dataset.originalHref) {
+                btn.href = btn.dataset.originalHref; // Restore original download link
+            }
             btn.removeEventListener('click', this.preventLockedClick);
         }
     },
@@ -217,6 +219,9 @@ window.gameEngine = {
 
         const lockBtn = document.getElementById('cv-vault-btn');
         if(lockBtn && !this.puzzleSolved) {
+            if (!lockBtn.dataset.originalHref) {
+                lockBtn.dataset.originalHref = lockBtn.href;
+            }
             lockBtn.href = "#"; // Disable link
             lockBtn.addEventListener('click', this.preventLockedClick);
         }
