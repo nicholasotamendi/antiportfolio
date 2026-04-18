@@ -6,23 +6,24 @@ Academic website for Nicholas Tochukwu Odey, a doctoral student in Engineering E
 
 - **HTML5:** Semantic structure.
 - **CSS3:** Vanilla CSS leveraging variables for the custom Deep Teal & Warm Gold color palette. Fully responsive (mobile, tablet, desktop).
-- **JavaScript:** Vanilla JS for mobile navigation and IntersectionObserver-based smooth scroll-reveal animations. No heavy frameworks.
+- **JavaScript:** Vanilla JS for mobile navigation, IntersectionObserver-based smooth scroll-reveal animations, and gamification logic (XP tracking, HUD, modals).
 - **Fonts & Icons:** Google Fonts (`Inter`, `Playfair Display`) and Font Awesome (via CDN).
 
 ## File Structure
 
 ```text
 /
-├── index.html          # Main homepage (Bio, Research Interests, Projects)
+├── index.html          # Main homepage (Bio, Research Interests, Digital Logic Sandbox)
 ├── egs6055.html        # Teaching Portfolio for EGS 6055
 ├── README.md           # This file
 └── assets/
     ├── css/
     │   └── style.css   # Main stylesheet (variables, components, responsive rules)
     ├── js/
-    │   └── main.js     # Scroll animations and navigation logic
+    │   ├── main.js     # Scroll animations and navigation logic
+    │   └── game.js     # XP system, modal popups, and Logic Sandbox functionality
     ├── images/         # Place your images here
-    └── docs/           # Place your PDF documents here
+    └── docs/           # Deprecated: Documents are now linked directly via Google Drive URLs
 ```
 
 ## How to Customize & Add Assets
@@ -36,25 +37,18 @@ Replace the placeholder image in the hero section of `index.html`.
 *   Ensure it is cropped to a square or a circle for best visual results. If no image is provided, an elegant initials avatar (`NTO`) will display automatically as a fallback.
 
 ### 2. Social Media Links
-In the footer of both `index.html` and `egs6055.html`, you will find social media icons.
-*   Find the `href="#"` attributes within the `<footer id="contact">` block.
-*   Replace `#` with your actual URLs (e.g., your LinkedIn profile, Google Scholar link, ResearchGate link, GitHub, and `mailto:` link for your email).
+The social media icons in the footers of both `index.html` and `egs6055.html` have been pre-populated with your live URLs (LinkedIn, Google Scholar, ResearchGate, GitHub, and Email). If you ever need to change them, modify the corresponding `href` attributes in the `<footer id="contact">` block.
 
-### 3. PDF Documents (Teaching Portfolio)
-The `egs6055.html` page has multiple download buttons expecting specific PDF files.
-*   Place your PDFs in the `assets/docs/` folder.
-*   Ensure the filenames match the placeholders linked in the HTML, or update the HTML to match your filenames.
-Expected filenames based on placeholders:
-    *   `theory_of_learning.pdf`
-    *   `teaching_philosophy.pdf`
-    *   `response_paper_1.pdf`
-    *   `response_paper_2.pdf`
-    *   `situational_factors.pdf`
-    *   `lesson_plan.pdf`
-    *   `teaching_demo_slides.pdf`
-    *   `pre_class_reading.pdf`
-    *   `exit_reflection.pdf`
-    *   `combined_handout.pdf`
+### 3. Adding Documents (Teaching Portfolio)
+Instead of serving local files from the `assets/docs` folder, all document buttons and embeds are now driven by **Google Drive** links.
+*   When uploading new documents, upload them to Google Drive and copy the "Share" link.
+*   Find the relevant download button in `egs6055.html` and paste your Google Drive URL into the `href` attribute.
+*   For the **Teaching Demonstration Slides**, the slide deck is natively embedded via an `iframe`. To update it, swap the Google Drive File ID inside the `iframe`'s `src` attribute.
+
+### 4. Gamification & Digital Sandbox
+The site features an interactive XP tracker and a Digital Logic Sandbox.
+*   Users gain XP by clicking on interactive tags and submitting forms.
+*   The Digital Logic Sandbox allows visitors to construct a 3-gate circuit using AND, OR, and XOR logic gates, actively demonstrating STEM concepts.
 
 ## Local Development
 
